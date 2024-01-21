@@ -28,7 +28,7 @@ def input_pdf_setup(uploaded_file):
         pdf_parts = [
             {
                 "mime_type": "image/jpeg",
-                "data": base64.b64encode(img_byte_arr).decode*()
+                "data": base64.b64encode(img_byte_arr).decode()
             }
         ]
         return pdf_parts
