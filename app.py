@@ -8,8 +8,8 @@ import google.generativeai as genai
 
 from dotenv import load_dotenv
 
-genai.configure(api_key = os.getenv("GOOGLE_API_KEY"))
-
+# genai.configure(api_key = os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key = st.secrets["GOOGLE_API_KEY"])
 load_dotenv()
 
 def get_gemini_response(input,pdf_content, prompt):
