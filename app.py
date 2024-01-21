@@ -24,7 +24,7 @@ def input_pdf_setup(uploaded_file):
 
         img_byte_arr = io.BytesIO()
         first_page.save(img_byte_arr, format = "JPEG")
-        img_byte_arr - img_byte_arr.getvalue()
+        img_byte_arr = img_byte_arr.getvalue()
         pdf_parts = [
             {
                 "mime_type": "image/jpeg",
